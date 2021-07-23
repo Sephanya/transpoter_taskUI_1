@@ -162,48 +162,76 @@ class MyOrders extends StatelessWidget {
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-              icon: Image.asset(
-                "assets/images/home.png", height: 20, width: 20,),
-              title: Text("Home", style: TextStyle(color: Colors.grey,fontFamily: 'Sofia Pro',),),
+              icon: Container(
+                padding: EdgeInsets.symmetric(vertical: 8),
+                child: Image.asset(
+                  "assets/images/home.png", height: 20, width: 20,),
+              ),
+              title: Container(
+                  child: Text("Home", style: TextStyle(color: Colors.grey,fontFamily: 'Sofia Pro',),)),
             ),
+
+
             BottomNavigationBarItem(
-                icon: Image.asset(
-                  "assets/images/orders.png", height: 20, width: 20,),
-                title: Text(
-                    "Orders", style: TextStyle(color: Color.fromARGB(
-                    252, 85, 28, 28),fontFamily: 'Sofia Pro')
+                icon: Container(
+                  padding: EdgeInsets.symmetric(vertical: 8),
+                  child: Image.asset(
+                    "assets/images/orders.png", height: 18, width: 18,),
+                ),
+                title: Container(
+                  child: Text(
+                      "Orders", style: TextStyle(color: Color.fromARGB(
+                      252, 85, 28, 28),fontFamily: 'Sofia Pro')
+                  ),
                 ),
                 backgroundColor: Colors.black
             ),
 
             BottomNavigationBarItem(
-              icon: Image.asset(
-                "assets/images/flightbottom.png", height: 25, width: 25,),
-              title: Text("Travel",style: TextStyle(fontFamily: 'Sofia Pro'),),
+              icon: Container(
+                padding: EdgeInsets.symmetric(vertical: 8),
+                child: Image.asset(
+                  "assets/images/flightbottom.png", height: 25, width: 25,),
+              ),
+              title: Container(
+                  child: Text("Travel",style: TextStyle(fontFamily: 'Sofia Pro'),)),
             ),
+
+
             BottomNavigationBarItem(
               icon: Badge(
                 shape: BadgeShape.square,
 
                 badgeColor: Color.fromRGBO(97, 54, 72, 1.0),
                 borderRadius: BorderRadius.circular(3),
-                position: BadgePosition.topEnd(top: -4,end: -13),
-                padding: EdgeInsets.only(left: 4,right: 4,bottom: 2,top: 3),
+                position: BadgePosition.topEnd(top: 4,end: -13),
+                padding: EdgeInsets.only(left: 5,right: 4,bottom: 2,top: 3),
                 badgeContent: Text(
                   '14',
                   style: TextStyle(
                       color: Colors.white, fontSize: 10, fontWeight: FontWeight.normal,fontFamily: 'Sofia Pro'),
                 ),
-                child: Image.asset(
-                  "assets/images/inbox.png", height: 25, width: 20,),
+                child: Container(
+                  padding: EdgeInsets.symmetric(vertical: 8),
+                  child: Image.asset(
+                    "assets/images/inbox.png", height: 25, width: 20,),
+                ),
               ),
-              title: Text("Inbox",style: TextStyle(fontFamily: 'Sofia Pro'),),
+              title: Container(
+                  child: Text("Inbox",style: TextStyle(fontFamily: 'Sofia Pro'),)),
 
             ),
+
+
             BottomNavigationBarItem(
-              icon: Image.asset(
-                  "assets/images/marketplace.png", height: 25, width: 20,),
-              title: Text("MarketPlace",style: TextStyle(fontFamily: 'Sofia Pro'),),
+              icon: Container(
+                padding: EdgeInsets.symmetric(vertical: 8),
+                child: Image.asset(
+                    "assets/images/marketplace.png", height: 25, width: 20,),
+              ),
+              title: Container(
+                  padding: EdgeInsets.only(right: 5),
+                  child: Text("MarketPlace",style: TextStyle(fontFamily: 'Sofia Pro'),)),
             ),
           ],
         ),
