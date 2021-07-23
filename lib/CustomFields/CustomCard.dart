@@ -53,7 +53,7 @@ class CustomCard extends StatelessWidget{
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 14,letterSpacing: 1.0,
+                      fontSize: 14,letterSpacing: 1.0,fontFamily: 'Sofia Pro',
                       fontWeight: FontWeight.bold),
                 )
             ),
@@ -63,7 +63,7 @@ class CustomCard extends StatelessWidget{
                 child: Text(  '- Graphite',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
-                      color: Colors.black,letterSpacing: 1.0,
+                      color: Colors.black,letterSpacing: 1.0,fontFamily: 'Sofia Pro',
                       fontSize: 14,
                       fontWeight: FontWeight.bold),
                 )
@@ -91,9 +91,9 @@ class CustomCard extends StatelessWidget{
                           child: Text(  'From',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.grey,letterSpacing: 1.0,
-                                fontSize: 12,
-                                fontWeight: FontWeight.w500),
+                                color: Colors.grey,fontFamily: 'Sofia Pro',
+                                fontSize: 11,
+                                fontWeight: FontWeight.normal),
                           )
                       ),
                       Positioned(
@@ -102,15 +102,15 @@ class CustomCard extends StatelessWidget{
                           child: Text(  'New York, USA',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500),
+                                color: Colors.black,fontFamily: 'Sofia Pro',
+                                fontSize: 13,
+                                fontWeight: FontWeight.normal),
                           )
                       ),
                       Positioned(
                           left: 10,
                           top: 15,
-                          child: Icon(Icons.location_on_rounded,color: Colors.grey,)
+                          child: Icon(Icons.location_on_rounded,color: Color.fromRGBO(164, 173, 179, 1.0),)
                       ),
                       Positioned(
                           left: 158,
@@ -135,9 +135,9 @@ class CustomCard extends StatelessWidget{
                           child: Text(  'Deliver to',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.grey,letterSpacing: 1.0,
-                                fontSize: 12,
-                                fontWeight: FontWeight.w500),
+                                color: Colors.grey,fontFamily: 'Sofia Pro',
+                                fontSize: 11,
+                                fontWeight: FontWeight.normal),
                           )
                       ),
                       Positioned(
@@ -146,15 +146,15 @@ class CustomCard extends StatelessWidget{
                           child: Text(  'Modrid,Spain',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500),
+                                color: Colors.black,fontFamily: 'Sofia Pro',
+                                fontSize: 13,
+                                fontWeight: FontWeight.normal),
                           )
                       ),
                       Positioned(
                           left: 175,
                           top: 15,
-                          child: Icon(Icons.location_on_rounded,color: Colors.grey,)
+                          child: Icon(Icons.location_on_rounded,color: Color.fromRGBO(164, 173, 179, 1.0),)
                       ),
 
 
@@ -181,7 +181,7 @@ class CustomCard extends StatelessWidget{
             ),
             Positioned(
               left: 10,
-                top: 170,
+                top: 168,
               child: Image.asset(
                           "assets/images/orderdetail.png",
                           width: 10,
@@ -196,7 +196,7 @@ class CustomCard extends StatelessWidget{
               child: Text(  'Order Details',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                    color : Color.fromRGBO(120, 62, 76, 1),
+                    color : Color.fromRGBO(120, 62, 76, 1),fontFamily: 'Sofia Pro',
                     fontSize: 13,
                     fontWeight: FontWeight.normal),
               )
@@ -209,7 +209,7 @@ class CustomCard extends StatelessWidget{
               child: Text(  'Aug 13,2021-Aug 28,2021',
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                    color: Colors.black,
+                    color: Colors.black,fontFamily: 'Sofia Pro',
                     fontSize: 13,
                     fontWeight: FontWeight.normal),
               )
@@ -274,7 +274,7 @@ class CustomCardshop extends StatelessWidget{
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 14,letterSpacing: 1.0,
+                      fontSize: 14,letterSpacing: 1.0,fontFamily: 'Sofia Pro',
                       fontWeight: FontWeight.bold),
                 )
             ),
@@ -284,7 +284,7 @@ class CustomCardshop extends StatelessWidget{
                 child: Text(  '- Graphite',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
-                      color: Colors.black,letterSpacing: 1.0,
+                      color: Colors.black,letterSpacing: 1.0,fontFamily: 'Sofia Pro',
                       fontSize: 14,
                       fontWeight: FontWeight.bold),
                 )
@@ -309,12 +309,12 @@ class CustomCardshop extends StatelessWidget{
                     children: [
                       Positioned(
                           left: 10,
-                         top: 3,
+                          top: 5,
 
                           child: Text(  'Shop',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.white,letterSpacing: 1.0,
+                                color: Colors.white,letterSpacing: 1.0,fontFamily: 'Sofia Pro',
                                 fontSize: 12,
                                 fontWeight: FontWeight.bold),
                           )
@@ -346,9 +346,9 @@ class CustomCardshop extends StatelessWidget{
                           child: Text(  'From',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.grey,letterSpacing: 1.0,
-                                fontSize: 12,
-                                fontWeight: FontWeight.w500),
+                                color: Colors.grey,letterSpacing: 1.0,fontFamily: 'Sofia Pro',
+                                fontSize: 11,
+                                fontWeight: FontWeight.normal),
                           )
                       ),
                       Positioned(
@@ -357,15 +357,15 @@ class CustomCardshop extends StatelessWidget{
                           child: Text(  'New York, USA',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500),
+                                color: Colors.black,fontFamily: 'Sofia Pro',
+                                fontSize: 13,
+                                fontWeight: FontWeight.normal),
                           )
                       ),
                       Positioned(
                           left: 10,
                           top: 15,
-                          child: Icon(Icons.location_on_rounded,color: Colors.grey,)
+                          child: Icon(Icons.location_on_rounded,color: Color.fromRGBO(164, 173, 179, 1.0),)
                       ),
                       Positioned(
                           left: 158,
@@ -390,9 +390,9 @@ class CustomCardshop extends StatelessWidget{
                           child: Text(  'Deliver to',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.grey,letterSpacing: 1.0,
-                                fontSize: 12,
-                                fontWeight: FontWeight.w500),
+                                color: Colors.grey,letterSpacing: 1.0,fontFamily: 'Sofia Pro',
+                                fontSize: 11,
+                                fontWeight: FontWeight.normal),
                           )
                       ),
                       Positioned(
@@ -401,15 +401,15 @@ class CustomCardshop extends StatelessWidget{
                           child: Text(  'Modrid,Spain',
                             textAlign: TextAlign.justify,
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500),
+                                color: Colors.black,fontFamily: 'Sofia Pro',
+                                fontSize: 13,
+                                fontWeight: FontWeight.normal),
                           )
                       ),
                       Positioned(
                           left: 175,
                           top: 15,
-                          child: Icon(Icons.location_on_rounded,color: Colors.grey,)
+                          child: Icon(Icons.location_on_rounded,color: Color.fromRGBO(164, 173, 179, 1.0),)
                       ),
 
 
@@ -436,7 +436,7 @@ class CustomCardshop extends StatelessWidget{
             ),
             Positioned(
               left: 10,
-              top: 170,
+              top: 168,
               child: Image.asset(
                 "assets/images/orderdetail.png",
                 width: 10,
@@ -451,7 +451,7 @@ class CustomCardshop extends StatelessWidget{
                 child: Text(  'Order Details',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
-                      color : Color.fromRGBO(120, 62, 76, 1),
+                      color : Color.fromRGBO(120, 62, 76, 1),fontFamily: 'Sofia Pro',
                       fontSize: 13,
                       fontWeight: FontWeight.normal),
                 )
@@ -464,7 +464,7 @@ class CustomCardshop extends StatelessWidget{
                 child: Text(  'Aug 13,2021-Aug 28,2021',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.black,fontFamily: 'Sofia Pro',
                       fontSize: 13,
                       fontWeight: FontWeight.normal),
                 )

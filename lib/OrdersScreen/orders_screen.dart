@@ -33,7 +33,7 @@ class MyOrders extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
                     'Orders',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.black,fontSize: 18,fontFamily: 'Sofia Pro',fontWeight: FontWeight.bold),
                   ))
             ],
           ),
@@ -50,8 +50,8 @@ class MyOrders extends StatelessWidget {
           ],
           bottom: TabBar(
             isScrollable: true,
-            labelStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
-            labelColor: Colors.black87,
+            labelStyle: TextStyle(fontSize: 17, fontWeight: FontWeight.normal,fontFamily: 'Sofia Pro',),
+            labelColor: Colors.grey[800],
            // indicatorColor: Color.fromRGBO(97, 54, 72, 1.0),
             indicatorPadding: EdgeInsets.only(left: 15),
             indicator: CustomIndicator(
@@ -68,19 +68,19 @@ class MyOrders extends StatelessWidget {
 
                     badgeColor: Color.fromRGBO(97, 54, 72, 1.0),
                     borderRadius: BorderRadius.circular(3),
-                    position: BadgePosition.topEnd(top: 2),
-                    padding: EdgeInsets.only(left: 4,right: 4,bottom: 1,top: 2),
+                    position: BadgePosition.topEnd(top: 1),
+                    padding: EdgeInsets.only(left: 4,right: 4,bottom: 2,top: 2),
                     badgeContent: Text(
                       '3',
                       style: TextStyle(
-                          color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold),
+                          color: Colors.white, fontSize: 10, fontWeight: FontWeight.normal,fontFamily: 'Sofia Pro'),
                     ),
 
                     child: Padding(
                       padding: const EdgeInsets.only(right: 10),
                       child: Text(
                         'All',
-                        style: TextStyle(color: Colors.black87),
+                        style: TextStyle(color: Colors.black87,fontFamily: 'Sofia Pro',fontWeight: FontWeight.bold),
                   ),
                     ),
 
@@ -89,19 +89,19 @@ class MyOrders extends StatelessWidget {
               ),
               ),
               new Container(
-                width: 78,
+                width: 72,
                 child: new Tab(
                   text: 'Pending',
                 ),
               ),
               new Container(
-                width: 81,
+                width: 87,
                 child: new Tab(
                   text: 'In Progress',
                 ),
               ),
               new Container(
-                width: 71,
+                width: 75,
                 child: new Tab(
                   text: 'Cancelled',
                 ),
@@ -116,7 +116,7 @@ class MyOrders extends StatelessWidget {
            SingleChildScrollView(
              child: Container(
                height: 1000,
-               color: Color.fromRGBO(236, 240, 248, 1.0),
+               color: Color.fromRGBO(242, 243, 247, 1.0),
                child: Column(
                  children: [
                    CustomCard(),
@@ -146,31 +146,32 @@ class MyOrders extends StatelessWidget {
           },
           label: const Text(
             'Add Order Request',
-            style: TextStyle(color: Colors.brown),
+            style: TextStyle(fontSize: 14,color: Color.fromRGBO(
+                113, 57, 71, 1.0),fontFamily: 'Sofia Pro'),
           ),
-          icon: const Icon(Icons.add, color: Colors.brown),
+          icon: const Icon(Icons.add, color: Color.fromRGBO(120, 62, 76, 1),),
           backgroundColor: Colors.white,
         ),
         bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.white,
           selectedItemColor: Color.fromARGB(252, 85, 28, 28),
           unselectedItemColor: Colors.grey[500],
-          selectedFontSize: 12,
-          unselectedFontSize: 12,
+          selectedFontSize: 11,
+          unselectedFontSize: 11,
           currentIndex: currentIndex,
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
               icon: Image.asset(
-                "assets/images/home.png", height: 25, width: 20,),
-              title: Text("Home", style: TextStyle(color: Colors.grey),),
+                "assets/images/home.png", height: 20, width: 20,),
+              title: Text("Home", style: TextStyle(color: Colors.grey,fontFamily: 'Sofia Pro',),),
             ),
             BottomNavigationBarItem(
                 icon: Image.asset(
-                  "assets/images/orders.png", height: 25, width: 20,),
+                  "assets/images/orders.png", height: 20, width: 20,),
                 title: Text(
                     "Orders", style: TextStyle(color: Color.fromARGB(
-                    252, 85, 28, 28))
+                    252, 85, 28, 28),fontFamily: 'Sofia Pro')
                 ),
                 backgroundColor: Colors.black
             ),
@@ -178,7 +179,7 @@ class MyOrders extends StatelessWidget {
             BottomNavigationBarItem(
               icon: Image.asset(
                 "assets/images/flightbottom.png", height: 25, width: 25,),
-              title: Text("Travel"),
+              title: Text("Travel",style: TextStyle(fontFamily: 'Sofia Pro'),),
             ),
             BottomNavigationBarItem(
               icon: Badge(
@@ -186,23 +187,23 @@ class MyOrders extends StatelessWidget {
 
                 badgeColor: Color.fromRGBO(97, 54, 72, 1.0),
                 borderRadius: BorderRadius.circular(3),
-                position: BadgePosition.topEnd(top: -1,end: -13),
+                position: BadgePosition.topEnd(top: -4,end: -13),
                 padding: EdgeInsets.only(left: 4,right: 4,bottom: 2,top: 3),
                 badgeContent: Text(
                   '14',
                   style: TextStyle(
-                      color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold),
+                      color: Colors.white, fontSize: 10, fontWeight: FontWeight.normal,fontFamily: 'Sofia Pro'),
                 ),
                 child: Image.asset(
                   "assets/images/inbox.png", height: 25, width: 20,),
               ),
-              title: Text("Inbox"),
+              title: Text("Inbox",style: TextStyle(fontFamily: 'Sofia Pro'),),
 
             ),
             BottomNavigationBarItem(
               icon: Image.asset(
                   "assets/images/marketplace.png", height: 25, width: 20,),
-              title: Text("MarketPlace"),
+              title: Text("MarketPlace",style: TextStyle(fontFamily: 'Sofia Pro'),),
             ),
           ],
         ),
